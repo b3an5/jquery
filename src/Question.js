@@ -30,11 +30,16 @@ export default class Question extends Component {
   }
 
   render() {
+    let split = this.props.data.vanilla.split('\n');
     if(this.state.answerVal === '') {
       return(
         <div className='question-card'>
           <h1 className='question-title'>{this.props.data.title}</h1>
-          <h2 className='vanilla-js'>{this.props.data.vanilla}</h2>
+          {
+            split.map((line) => {
+              return <h2 className='vanilla-js'>{line}</h2>
+            })
+          }
           <input onChange={this.recordAnswer} typeof={Text} className='answer-input'></input>
           <button className='question-button' onClick={this.enterAnswer} >enter</button>
         </div>
