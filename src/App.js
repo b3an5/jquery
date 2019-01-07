@@ -10,14 +10,14 @@ class App extends Component {
     super();
     this.state = {
       splash: true,
-      score: 0,
-      difficulty: 10
+      difficulty: 10,
     }
   }
   
-  showMainPage = () => {
+  toggleMainPage = () => {
+    this.passDifficulty()
     this.setState({
-      splash: false
+      splash: !this.state.splash
     })
   }
 
@@ -27,18 +27,29 @@ class App extends Component {
     })
   }
 
+  passDifficulty = () => {
+    let difficultyButtons = document.querySelectorAll('.radios');
+
+    for (var i = 0; i < difficultyButtons.length; i++) {
+      if (difficultyButtons[i].checked === true) {
+        this.setDifficulty(difficultyButtons[i].value)
+      }
+    }
+  }
+
   render() {
     if (this.state.splash === true) {
       return (
           <Splash 
           setDifficulty={this.setDifficulty}
-          showMainPage={this.showMainPage} />
+          showMainPage={this.toggleMainPage} />
       );
     } else {
       return (
           <Main 
           jQueryData={jQueryData.jQueryData}
-          difficulty={this.state.difficulty} />
+          difficulty={this.state.difficulty}
+          showMainPage={this.toggleMainPage} />
       )
     }
   }
