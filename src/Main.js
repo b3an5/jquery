@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Question from "./Question.js";
+import Header from "./Header.js";
 
 export default class Main extends Component {
   constructor() {
@@ -18,8 +19,8 @@ export default class Main extends Component {
   render() {
     return (
       <div className='main-page'>
-        <h1 className='main-title'>main Page</h1>
-        <h2>score:<span>{this.state.score}</span></h2>
+      <Header score={this.state.score} />
+      <div className='stickey-header'></div>
         {
           this.props.jQueryData.map((data, index) => {
             return <Question 

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Splash from './Splash.js';
 import Main from './Main.js';
-import './App.css';
 import jQueryData from './data.js'
+import './scss/main.scss'
 
 
 class App extends Component {

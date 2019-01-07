@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './scss/main.scss'
 
 export default class Question extends Component {
   constructor() {
@@ -31,30 +32,30 @@ export default class Question extends Component {
   render() {
     if(this.state.answerVal === '') {
       return(
-        <div>
-          <h1>{this.props.data.title}</h1>
-          <h2>{this.props.data.vanilla}</h2>
+        <div className='question-card'>
+          <h1 className='question-title'>{this.props.data.title}</h1>
+          <h2 className='vanilla-js'>{this.props.data.vanilla}</h2>
           <input onChange={this.recordAnswer} typeof={Text} className='answer-input'></input>
-          <button onClick={this.enterAnswer} >enter</button>
+          <button className='question-button' onClick={this.enterAnswer} >enter</button>
         </div>
       )
     } else if (this.state.answerVal === 'correct') {
       return (
-        <div>
-          <h1>{this.props.data.title}</h1>
-          <h2>{this.props.data.vanilla}</h2>
+        <div className='question-card'>
+          <h1 className='question-title'>{this.props.data.title}</h1>
+          <h2 className='vanilla-js'>{this.props.data.vanilla}</h2>
           <h1 className='correct-answer' >{this.props.data.jquery}</h1>
-          <h1>correct</h1>
+          <h1 className='checkmark'>&#10004;</h1>
         </div>
       )
     } else if (this.state.answerVal === 'incorrect') {
       return (
-        <div>
-          <h1>{this.props.data.title}</h1>
-          <h2>{this.props.data.vanilla}</h2>
+        <div className='question-card'>
+          <h1 className='question-title'>{this.props.data.title}</h1>
+          <h2 className='vanilla-js'>{this.props.data.vanilla}</h2>
           <h1 className='incorrect-answer' >{this.state.answerInput}</h1>
           <h1 className='correct-answer' >{this.props.data.jquery}</h1>
-          <h1>wrong</h1>
+          <h1 className='xmark'>X</h1>
         </div>
       )
     }

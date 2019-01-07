@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'chalkBoard-font';
+  src: url('../fonts/font/chalkBoard.ttf')
+}
+
+.splash-page {
+  background: url('../pics/chalkBoard.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-title {
+  color: #fff;
+  font-size: 4em;
+  font-family: 'chalkBoard-font'
+}
+
+.app-description {
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.splash-button {
+  padding: 5px;
+  color: yellow;
+  background-color: green;
+  margin-top: 5px;
+  &:hover {
+    cursor: pointer;
+    color: green;
+    background-color: yellow;
+  }
+}
