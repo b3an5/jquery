@@ -11,6 +11,10 @@ export default class Main extends Component {
     }
   }
 
+  setHighScore = () => {
+    localStorage.setItem('highScore', JSON.stringify(this.state.highScore))
+  }
+
   resetGame = () => {
     this.props.showMainPage();
     this.setState({
@@ -22,9 +26,11 @@ export default class Main extends Component {
     this.setState({
       score: this.state.score += 100
     })
-    if (this.state.score > this.state.highScore) {
+    if (this.state.score > JSON.parse(localStorage.getItem('highScore'))) {
       this.setState({
         highScore: this.state.score,
+      }, () => {
+        this.setHighScore();
       })
     }
   }

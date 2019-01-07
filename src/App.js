@@ -9,9 +9,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      jQueryData: null,
       splash: true,
       difficulty: 10,
     }
+  }
+
+  componentDidMount = () => {
+    fetch('http://memoize-datasets.herokuapp.com/api/v1/JqueryData')
+      .then(response => response.json())
+      .then(jQueryData => this.setState({
+        jQueryData: jQueryData.jQueryData
+      }))
+      .catch(error => console.log(error));
   }
   
   toggleMainPage = () => {
@@ -47,7 +57,7 @@ class App extends Component {
     } else {
       return (
           <Main 
-          jQueryData={jQueryData.jQueryData}
+          jQueryData={this.state.jQueryData}
           difficulty={this.state.difficulty}
           showMainPage={this.toggleMainPage} />
       )

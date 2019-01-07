@@ -14,7 +14,8 @@ const jQueryData = [
   {
     "title": "Add Class",
     "jquery": "$(el).addClass(className);",
-    "vanilla": "if (el.classList)\n  el.classList.add(className);\nelse\n  el.className += ' ' + className;",
+    "vanilla": `if (el.classList)
+      el.classList.add(className);\nelse\n  el.className += ' ' + className;`,
     "id": 3
   },
   {
