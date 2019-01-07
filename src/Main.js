@@ -27,7 +27,7 @@ export default class Main extends Component {
             data={data}
             index={index}
             scoreUp={this.scoreUp} />
-          })
+          }).slice(0, this.props.difficulty)
         }
       </div>
     )

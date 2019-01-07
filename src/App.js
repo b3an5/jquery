@@ -10,7 +10,8 @@ class App extends Component {
     super();
     this.state = {
       splash: true,
-      score: 0
+      score: 0,
+      difficulty: 10
     }
   }
   
@@ -20,14 +21,24 @@ class App extends Component {
     })
   }
 
+  setDifficulty = (value) => {
+    this.setState({
+      difficulty: value
+    })
+  }
+
   render() {
     if (this.state.splash === true) {
       return (
-          <Splash showMainPage={this.showMainPage} />
+          <Splash 
+          setDifficulty={this.setDifficulty}
+          showMainPage={this.showMainPage} />
       );
     } else {
       return (
-          <Main jQueryData={jQueryData.jQueryData} />
+          <Main 
+          jQueryData={jQueryData.jQueryData}
+          difficulty={this.state.difficulty} />
       )
     }
   }
