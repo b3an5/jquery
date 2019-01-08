@@ -1,0 +1,3098 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Main
+    jQueryData={
+      Array [
+        Object {
+          "id": 1,
+          "jquery": "$(el).hide();",
+          "title": "Hide",
+          "vanilla": "el.style.display = 'none';
+",
+        },
+        Object {
+          "id": 2,
+          "jquery": "$(el).show();
+",
+          "title": "Show",
+          "vanilla": "el.style.display = 'block';",
+        },
+        Object {
+          "id": 3,
+          "jquery": "$(el).addClass(className);",
+          "title": "Add Class",
+          "vanilla": "if (el.classList)
+      el.classList.add(className);
+else
+  el.className += ' ' + className;",
+        },
+        Object {
+          "id": 4,
+          "jquery": "$(el).after(htmlString);",
+          "title": "After",
+          "vanilla": "el.insertAdjacentHTML('afterend', htmlString);",
+        },
+        Object {
+          "id": 5,
+          "jquery": "$(parent).append(el);",
+          "title": "Append",
+          "vanilla": "parent.appendChild(el);",
+        },
+        Object {
+          "id": 6,
+          "jquery": "$(el).before(htmlString);",
+          "title": "Before",
+          "vanilla": "el.insertAdjacentHTML('beforebegin', htmlString);",
+        },
+        Object {
+          "id": 7,
+          "jquery": "$(el).children();",
+          "title": "Children",
+          "vanilla": "el.children",
+        },
+        Object {
+          "id": 8,
+          "jquery": "$(el).clone();",
+          "title": "Clone",
+          "vanilla": "el.cloneNode(true);",
+        },
+        Object {
+          "id": 9,
+          "jquery": "$.contains(el, child);",
+          "title": "Contains",
+          "vanilla": "el !== child && el.contains(child);",
+        },
+        Object {
+          "id": 10,
+          "jquery": "$(el).find(selector).length;",
+          "title": "Contains Selector",
+          "vanilla": "el.querySelector(selector) !== null",
+        },
+        Object {
+          "id": 11,
+          "jquery": "$(selector).each(function(i, el){
+
+});",
+          "title": "Each",
+          "vanilla": "var elements = document.querySelectorAll(selector);
+Array.prototype.forEach.call(elements, function(el, i){
+
+});",
+        },
+        Object {
+          "id": 12,
+          "jquery": "$(el).empty();
+",
+          "title": "Empty",
+          "vanilla": "el.innerHTML = '';",
+        },
+        Object {
+          "id": 13,
+          "jquery": "$(selector).filter(filterFn);",
+          "title": "Filter",
+          "vanilla": "Array.prototype.filter.call(document.querySelectorAll(selector), filterFn);
+",
+        },
+        Object {
+          "id": 14,
+          "jquery": "$(el).find(selector);",
+          "title": "Find Children",
+          "vanilla": "el.querySelectorAll(selector);",
+        },
+        Object {
+          "id": 15,
+          "jquery": "$('.my #awesome selector');",
+          "title": "Find Elements",
+          "vanilla": "document.querySelectorAll('.my #awesome selector');",
+        },
+        Object {
+          "id": 16,
+          "jquery": "$(el).attr('tabindex');",
+          "title": "Get Attributes",
+          "vanilla": "el.getAttribute('tabindex');",
+        },
+        Object {
+          "id": 17,
+          "jquery": "$(el).html();",
+          "title": "Get HTML",
+          "vanilla": "el.innerHTML",
+        },
+        Object {
+          "id": 18,
+          "jquery": "$(el).css(ruleName);",
+          "title": "Get Style",
+          "vanilla": "getComputedStyle(el)[ruleName];",
+        },
+        Object {
+          "id": 19,
+          "jquery": "$(el).text();",
+          "title": "Get Text",
+          "vanilla": "el.textContent",
+        },
+        Object {
+          "id": 20,
+          "jquery": "$(el).hasClass(className);",
+          "title": "Has Class",
+          "vanilla": "if (el.classList)
+  el.classList.contains(className);
+else
+  new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);",
+        },
+        Object {
+          "id": 21,
+          "jquery": "$(el).next();",
+          "title": "Next",
+          "vanilla": "el.nextElementSibling",
+        },
+        Object {
+          "id": 22,
+          "jquery": "$(el).parent();",
+          "title": "Parent",
+          "vanilla": "el.parentNode",
+        },
+        Object {
+          "id": 23,
+          "jquery": "$(parent).prepend(el);",
+          "title": "Prepend",
+          "vanilla": "parent.insertBefore(el, parent.firstChild);",
+        },
+        Object {
+          "id": 24,
+          "jquery": "$(el).prev();",
+          "title": "Prev",
+          "vanilla": "el.previousElementSibling",
+        },
+        Object {
+          "id": 25,
+          "jquery": "$(el).remove();",
+          "title": "Remove",
+          "vanilla": "el.parentNode.removeChild(el);",
+        },
+        Object {
+          "id": 26,
+          "jquery": "$(el).removeClass(className);",
+          "title": "Remove Class",
+          "vanilla": "if (el.classList)
+  el.classList.remove(className);
+else
+  el.className = el.className.replace(new RegExp('(^|\\\\\\\\b)' + className.split(' ').join('|') + '(\\\\\\\\b|$)', 'gi'), ' ');",
+        },
+        Object {
+          "id": 27,
+          "jquery": "$(el).replaceWith(string);",
+          "title": "Replace From HTML",
+          "vanilla": "el.outerHTML = string;",
+        },
+        Object {
+          "id": 28,
+          "jquery": "$(el).attr('tabindex', 3);",
+          "title": "Set Attributes",
+          "vanilla": "el.setAttribute('tabindex', 3);",
+        },
+        Object {
+          "id": 29,
+          "jquery": "$(el).html(string);",
+          "title": "Set HTML",
+          "vanilla": "el.innerHTML = string;",
+        },
+        Object {
+          "id": 30,
+          "jquery": "$(el).css('border-width', '20px');",
+          "title": "Set Style",
+          "vanilla": "// Use a class if possible
+el.style.borderWidth = '20px';",
+        },
+        Object {
+          "id": 31,
+          "jquery": "$(el).text(string);
+",
+          "title": "Set Text",
+          "vanilla": "el.textContent = string;",
+        },
+        Object {
+          "id": 32,
+          "jquery": "$(el).siblings();",
+          "title": "Siblings",
+          "vanilla": "Array.prototype.filter.call(el.parentNode.children, function(child){
+  return child !== el;
+});",
+        },
+        Object {
+          "id": 33,
+          "jquery": "$(el).toggleClass(className);",
+          "title": "Toggle Class",
+          "vanilla": "if (el.classList) {
+  el.classList.toggle(className);
+} else {
+  var classes = el.className.split(' ');
+  var existingIndex = classes.indexOf(className);
+
+  if (existingIndex >= 0)
+    classes.splice(existingIndex, 1);
+  else
+    classes.push(className);
+
+  el.className = classes.join(' ');
+}",
+        },
+        Object {
+          "id": 34,
+          "jquery": "$(el).off(eventName, eventHandler);",
+          "title": "Off",
+          "vanilla": "el.removeEventListener(eventName, eventHandler);",
+        },
+        Object {
+          "id": 35,
+          "jquery": "$(el).on(eventName, eventHandler);",
+          "title": "On",
+          "vanilla": "el.addEventListener(eventName, eventHandler);",
+        },
+        Object {
+          "id": 36,
+          "jquery": "$(document).ready(function(){
+
+});",
+          "title": "Ready",
+          "vanilla": "function ready(fn) {
+  if (document.attachEvent ? document.readyState === \\"complete\\" : document.readyState !== \\"loading\\"){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}",
+        },
+        Object {
+          "id": 37,
+          "jquery": "$.each(array, function(i, item){
+
+});",
+          "title": "Array Each",
+          "vanilla": "array.forEach(function(item, i){
+
+});",
+        },
+        Object {
+          "id": 38,
+          "jquery": "$.inArray(item, array);",
+          "title": "Index Of",
+          "vanilla": "array.indexOf(item);",
+        },
+        Object {
+          "id": 39,
+          "jquery": "$.map(array, function(value, index){
+
+});",
+          "title": "Map",
+          "vanilla": "array.map(function(value, index){
+
+});",
+        },
+        Object {
+          "id": 40,
+          "jquery": "$.parseJSON(string);
+",
+          "title": "Parse JSON",
+          "vanilla": "JSON.parse(string);",
+        },
+        Object {
+          "id": 41,
+          "jquery": "$.trim(string);",
+          "title": "Trim",
+          "vanilla": "string.trim();",
+        },
+      ]
+    }
+    showMainPage={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header
+          highScore={0}
+          resetGame={[Function]}
+          score={0}
+        />,
+        <div
+          className="stickey-header"
+        />,
+        Array [
+          <Question
+            data={
+              Object {
+                "id": 1,
+                "jquery": "$(el).hide();",
+                "title": "Hide",
+                "vanilla": "el.style.display = 'none';
+",
+              }
+            }
+            index={0}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 2,
+                "jquery": "$(el).show();
+",
+                "title": "Show",
+                "vanilla": "el.style.display = 'block';",
+              }
+            }
+            index={1}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 3,
+                "jquery": "$(el).addClass(className);",
+                "title": "Add Class",
+                "vanilla": "if (el.classList)
+      el.classList.add(className);
+else
+  el.className += ' ' + className;",
+              }
+            }
+            index={2}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 4,
+                "jquery": "$(el).after(htmlString);",
+                "title": "After",
+                "vanilla": "el.insertAdjacentHTML('afterend', htmlString);",
+              }
+            }
+            index={3}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 5,
+                "jquery": "$(parent).append(el);",
+                "title": "Append",
+                "vanilla": "parent.appendChild(el);",
+              }
+            }
+            index={4}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 6,
+                "jquery": "$(el).before(htmlString);",
+                "title": "Before",
+                "vanilla": "el.insertAdjacentHTML('beforebegin', htmlString);",
+              }
+            }
+            index={5}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 7,
+                "jquery": "$(el).children();",
+                "title": "Children",
+                "vanilla": "el.children",
+              }
+            }
+            index={6}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 8,
+                "jquery": "$(el).clone();",
+                "title": "Clone",
+                "vanilla": "el.cloneNode(true);",
+              }
+            }
+            index={7}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 9,
+                "jquery": "$.contains(el, child);",
+                "title": "Contains",
+                "vanilla": "el !== child && el.contains(child);",
+              }
+            }
+            index={8}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 10,
+                "jquery": "$(el).find(selector).length;",
+                "title": "Contains Selector",
+                "vanilla": "el.querySelector(selector) !== null",
+              }
+            }
+            index={9}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 11,
+                "jquery": "$(selector).each(function(i, el){
+
+});",
+                "title": "Each",
+                "vanilla": "var elements = document.querySelectorAll(selector);
+Array.prototype.forEach.call(elements, function(el, i){
+
+});",
+              }
+            }
+            index={10}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 12,
+                "jquery": "$(el).empty();
+",
+                "title": "Empty",
+                "vanilla": "el.innerHTML = '';",
+              }
+            }
+            index={11}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 13,
+                "jquery": "$(selector).filter(filterFn);",
+                "title": "Filter",
+                "vanilla": "Array.prototype.filter.call(document.querySelectorAll(selector), filterFn);
+",
+              }
+            }
+            index={12}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 14,
+                "jquery": "$(el).find(selector);",
+                "title": "Find Children",
+                "vanilla": "el.querySelectorAll(selector);",
+              }
+            }
+            index={13}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 15,
+                "jquery": "$('.my #awesome selector');",
+                "title": "Find Elements",
+                "vanilla": "document.querySelectorAll('.my #awesome selector');",
+              }
+            }
+            index={14}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 16,
+                "jquery": "$(el).attr('tabindex');",
+                "title": "Get Attributes",
+                "vanilla": "el.getAttribute('tabindex');",
+              }
+            }
+            index={15}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 17,
+                "jquery": "$(el).html();",
+                "title": "Get HTML",
+                "vanilla": "el.innerHTML",
+              }
+            }
+            index={16}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 18,
+                "jquery": "$(el).css(ruleName);",
+                "title": "Get Style",
+                "vanilla": "getComputedStyle(el)[ruleName];",
+              }
+            }
+            index={17}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 19,
+                "jquery": "$(el).text();",
+                "title": "Get Text",
+                "vanilla": "el.textContent",
+              }
+            }
+            index={18}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 20,
+                "jquery": "$(el).hasClass(className);",
+                "title": "Has Class",
+                "vanilla": "if (el.classList)
+  el.classList.contains(className);
+else
+  new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);",
+              }
+            }
+            index={19}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 21,
+                "jquery": "$(el).next();",
+                "title": "Next",
+                "vanilla": "el.nextElementSibling",
+              }
+            }
+            index={20}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 22,
+                "jquery": "$(el).parent();",
+                "title": "Parent",
+                "vanilla": "el.parentNode",
+              }
+            }
+            index={21}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 23,
+                "jquery": "$(parent).prepend(el);",
+                "title": "Prepend",
+                "vanilla": "parent.insertBefore(el, parent.firstChild);",
+              }
+            }
+            index={22}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 24,
+                "jquery": "$(el).prev();",
+                "title": "Prev",
+                "vanilla": "el.previousElementSibling",
+              }
+            }
+            index={23}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 25,
+                "jquery": "$(el).remove();",
+                "title": "Remove",
+                "vanilla": "el.parentNode.removeChild(el);",
+              }
+            }
+            index={24}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 26,
+                "jquery": "$(el).removeClass(className);",
+                "title": "Remove Class",
+                "vanilla": "if (el.classList)
+  el.classList.remove(className);
+else
+  el.className = el.className.replace(new RegExp('(^|\\\\\\\\b)' + className.split(' ').join('|') + '(\\\\\\\\b|$)', 'gi'), ' ');",
+              }
+            }
+            index={25}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 27,
+                "jquery": "$(el).replaceWith(string);",
+                "title": "Replace From HTML",
+                "vanilla": "el.outerHTML = string;",
+              }
+            }
+            index={26}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 28,
+                "jquery": "$(el).attr('tabindex', 3);",
+                "title": "Set Attributes",
+                "vanilla": "el.setAttribute('tabindex', 3);",
+              }
+            }
+            index={27}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 29,
+                "jquery": "$(el).html(string);",
+                "title": "Set HTML",
+                "vanilla": "el.innerHTML = string;",
+              }
+            }
+            index={28}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 30,
+                "jquery": "$(el).css('border-width', '20px');",
+                "title": "Set Style",
+                "vanilla": "// Use a class if possible
+el.style.borderWidth = '20px';",
+              }
+            }
+            index={29}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 31,
+                "jquery": "$(el).text(string);
+",
+                "title": "Set Text",
+                "vanilla": "el.textContent = string;",
+              }
+            }
+            index={30}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 32,
+                "jquery": "$(el).siblings();",
+                "title": "Siblings",
+                "vanilla": "Array.prototype.filter.call(el.parentNode.children, function(child){
+  return child !== el;
+});",
+              }
+            }
+            index={31}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 33,
+                "jquery": "$(el).toggleClass(className);",
+                "title": "Toggle Class",
+                "vanilla": "if (el.classList) {
+  el.classList.toggle(className);
+} else {
+  var classes = el.className.split(' ');
+  var existingIndex = classes.indexOf(className);
+
+  if (existingIndex >= 0)
+    classes.splice(existingIndex, 1);
+  else
+    classes.push(className);
+
+  el.className = classes.join(' ');
+}",
+              }
+            }
+            index={32}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 34,
+                "jquery": "$(el).off(eventName, eventHandler);",
+                "title": "Off",
+                "vanilla": "el.removeEventListener(eventName, eventHandler);",
+              }
+            }
+            index={33}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 35,
+                "jquery": "$(el).on(eventName, eventHandler);",
+                "title": "On",
+                "vanilla": "el.addEventListener(eventName, eventHandler);",
+              }
+            }
+            index={34}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 36,
+                "jquery": "$(document).ready(function(){
+
+});",
+                "title": "Ready",
+                "vanilla": "function ready(fn) {
+  if (document.attachEvent ? document.readyState === \\"complete\\" : document.readyState !== \\"loading\\"){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}",
+              }
+            }
+            index={35}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 37,
+                "jquery": "$.each(array, function(i, item){
+
+});",
+                "title": "Array Each",
+                "vanilla": "array.forEach(function(item, i){
+
+});",
+              }
+            }
+            index={36}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 38,
+                "jquery": "$.inArray(item, array);",
+                "title": "Index Of",
+                "vanilla": "array.indexOf(item);",
+              }
+            }
+            index={37}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 39,
+                "jquery": "$.map(array, function(value, index){
+
+});",
+                "title": "Map",
+                "vanilla": "array.map(function(value, index){
+
+});",
+              }
+            }
+            index={38}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 40,
+                "jquery": "$.parseJSON(string);
+",
+                "title": "Parse JSON",
+                "vanilla": "JSON.parse(string);",
+              }
+            }
+            index={39}
+            scoreUp={[Function]}
+          />,
+          <Question
+            data={
+              Object {
+                "id": 41,
+                "jquery": "$.trim(string);",
+                "title": "Trim",
+                "vanilla": "string.trim();",
+              }
+            }
+            index={40}
+            scoreUp={[Function]}
+          />,
+        ],
+      ],
+      "className": "main-page",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "highScore": 0,
+          "resetGame": [Function],
+          "score": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "stickey-header",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 1,
+            "jquery": "$(el).hide();",
+            "title": "Hide",
+            "vanilla": "el.style.display = 'none';
+",
+          },
+          "index": 0,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 2,
+            "jquery": "$(el).show();
+",
+            "title": "Show",
+            "vanilla": "el.style.display = 'block';",
+          },
+          "index": 1,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 3,
+            "jquery": "$(el).addClass(className);",
+            "title": "Add Class",
+            "vanilla": "if (el.classList)
+      el.classList.add(className);
+else
+  el.className += ' ' + className;",
+          },
+          "index": 2,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 4,
+            "jquery": "$(el).after(htmlString);",
+            "title": "After",
+            "vanilla": "el.insertAdjacentHTML('afterend', htmlString);",
+          },
+          "index": 3,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 5,
+            "jquery": "$(parent).append(el);",
+            "title": "Append",
+            "vanilla": "parent.appendChild(el);",
+          },
+          "index": 4,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 6,
+            "jquery": "$(el).before(htmlString);",
+            "title": "Before",
+            "vanilla": "el.insertAdjacentHTML('beforebegin', htmlString);",
+          },
+          "index": 5,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 7,
+            "jquery": "$(el).children();",
+            "title": "Children",
+            "vanilla": "el.children",
+          },
+          "index": 6,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 8,
+            "jquery": "$(el).clone();",
+            "title": "Clone",
+            "vanilla": "el.cloneNode(true);",
+          },
+          "index": 7,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 9,
+            "jquery": "$.contains(el, child);",
+            "title": "Contains",
+            "vanilla": "el !== child && el.contains(child);",
+          },
+          "index": 8,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 10,
+            "jquery": "$(el).find(selector).length;",
+            "title": "Contains Selector",
+            "vanilla": "el.querySelector(selector) !== null",
+          },
+          "index": 9,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 11,
+            "jquery": "$(selector).each(function(i, el){
+
+});",
+            "title": "Each",
+            "vanilla": "var elements = document.querySelectorAll(selector);
+Array.prototype.forEach.call(elements, function(el, i){
+
+});",
+          },
+          "index": 10,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 12,
+            "jquery": "$(el).empty();
+",
+            "title": "Empty",
+            "vanilla": "el.innerHTML = '';",
+          },
+          "index": 11,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 13,
+            "jquery": "$(selector).filter(filterFn);",
+            "title": "Filter",
+            "vanilla": "Array.prototype.filter.call(document.querySelectorAll(selector), filterFn);
+",
+          },
+          "index": 12,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 14,
+            "jquery": "$(el).find(selector);",
+            "title": "Find Children",
+            "vanilla": "el.querySelectorAll(selector);",
+          },
+          "index": 13,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 15,
+            "jquery": "$('.my #awesome selector');",
+            "title": "Find Elements",
+            "vanilla": "document.querySelectorAll('.my #awesome selector');",
+          },
+          "index": 14,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 16,
+            "jquery": "$(el).attr('tabindex');",
+            "title": "Get Attributes",
+            "vanilla": "el.getAttribute('tabindex');",
+          },
+          "index": 15,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 17,
+            "jquery": "$(el).html();",
+            "title": "Get HTML",
+            "vanilla": "el.innerHTML",
+          },
+          "index": 16,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 18,
+            "jquery": "$(el).css(ruleName);",
+            "title": "Get Style",
+            "vanilla": "getComputedStyle(el)[ruleName];",
+          },
+          "index": 17,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 19,
+            "jquery": "$(el).text();",
+            "title": "Get Text",
+            "vanilla": "el.textContent",
+          },
+          "index": 18,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 20,
+            "jquery": "$(el).hasClass(className);",
+            "title": "Has Class",
+            "vanilla": "if (el.classList)
+  el.classList.contains(className);
+else
+  new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);",
+          },
+          "index": 19,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 21,
+            "jquery": "$(el).next();",
+            "title": "Next",
+            "vanilla": "el.nextElementSibling",
+          },
+          "index": 20,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 22,
+            "jquery": "$(el).parent();",
+            "title": "Parent",
+            "vanilla": "el.parentNode",
+          },
+          "index": 21,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 23,
+            "jquery": "$(parent).prepend(el);",
+            "title": "Prepend",
+            "vanilla": "parent.insertBefore(el, parent.firstChild);",
+          },
+          "index": 22,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 24,
+            "jquery": "$(el).prev();",
+            "title": "Prev",
+            "vanilla": "el.previousElementSibling",
+          },
+          "index": 23,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 25,
+            "jquery": "$(el).remove();",
+            "title": "Remove",
+            "vanilla": "el.parentNode.removeChild(el);",
+          },
+          "index": 24,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 26,
+            "jquery": "$(el).removeClass(className);",
+            "title": "Remove Class",
+            "vanilla": "if (el.classList)
+  el.classList.remove(className);
+else
+  el.className = el.className.replace(new RegExp('(^|\\\\\\\\b)' + className.split(' ').join('|') + '(\\\\\\\\b|$)', 'gi'), ' ');",
+          },
+          "index": 25,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 27,
+            "jquery": "$(el).replaceWith(string);",
+            "title": "Replace From HTML",
+            "vanilla": "el.outerHTML = string;",
+          },
+          "index": 26,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 28,
+            "jquery": "$(el).attr('tabindex', 3);",
+            "title": "Set Attributes",
+            "vanilla": "el.setAttribute('tabindex', 3);",
+          },
+          "index": 27,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 29,
+            "jquery": "$(el).html(string);",
+            "title": "Set HTML",
+            "vanilla": "el.innerHTML = string;",
+          },
+          "index": 28,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 30,
+            "jquery": "$(el).css('border-width', '20px');",
+            "title": "Set Style",
+            "vanilla": "// Use a class if possible
+el.style.borderWidth = '20px';",
+          },
+          "index": 29,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 31,
+            "jquery": "$(el).text(string);
+",
+            "title": "Set Text",
+            "vanilla": "el.textContent = string;",
+          },
+          "index": 30,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 32,
+            "jquery": "$(el).siblings();",
+            "title": "Siblings",
+            "vanilla": "Array.prototype.filter.call(el.parentNode.children, function(child){
+  return child !== el;
+});",
+          },
+          "index": 31,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 33,
+            "jquery": "$(el).toggleClass(className);",
+            "title": "Toggle Class",
+            "vanilla": "if (el.classList) {
+  el.classList.toggle(className);
+} else {
+  var classes = el.className.split(' ');
+  var existingIndex = classes.indexOf(className);
+
+  if (existingIndex >= 0)
+    classes.splice(existingIndex, 1);
+  else
+    classes.push(className);
+
+  el.className = classes.join(' ');
+}",
+          },
+          "index": 32,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 34,
+            "jquery": "$(el).off(eventName, eventHandler);",
+            "title": "Off",
+            "vanilla": "el.removeEventListener(eventName, eventHandler);",
+          },
+          "index": 33,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 35,
+            "jquery": "$(el).on(eventName, eventHandler);",
+            "title": "On",
+            "vanilla": "el.addEventListener(eventName, eventHandler);",
+          },
+          "index": 34,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 36,
+            "jquery": "$(document).ready(function(){
+
+});",
+            "title": "Ready",
+            "vanilla": "function ready(fn) {
+  if (document.attachEvent ? document.readyState === \\"complete\\" : document.readyState !== \\"loading\\"){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}",
+          },
+          "index": 35,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 37,
+            "jquery": "$.each(array, function(i, item){
+
+});",
+            "title": "Array Each",
+            "vanilla": "array.forEach(function(item, i){
+
+});",
+          },
+          "index": 36,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 38,
+            "jquery": "$.inArray(item, array);",
+            "title": "Index Of",
+            "vanilla": "array.indexOf(item);",
+          },
+          "index": 37,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 39,
+            "jquery": "$.map(array, function(value, index){
+
+});",
+            "title": "Map",
+            "vanilla": "array.map(function(value, index){
+
+});",
+          },
+          "index": 38,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 40,
+            "jquery": "$.parseJSON(string);
+",
+            "title": "Parse JSON",
+            "vanilla": "JSON.parse(string);",
+          },
+          "index": 39,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "data": Object {
+            "id": 41,
+            "jquery": "$.trim(string);",
+            "title": "Trim",
+            "vanilla": "string.trim();",
+          },
+          "index": 40,
+          "scoreUp": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header
+            highScore={0}
+            resetGame={[Function]}
+            score={0}
+          />,
+          <div
+            className="stickey-header"
+          />,
+          Array [
+            <Question
+              data={
+                Object {
+                  "id": 1,
+                  "jquery": "$(el).hide();",
+                  "title": "Hide",
+                  "vanilla": "el.style.display = 'none';
+",
+                }
+              }
+              index={0}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 2,
+                  "jquery": "$(el).show();
+",
+                  "title": "Show",
+                  "vanilla": "el.style.display = 'block';",
+                }
+              }
+              index={1}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 3,
+                  "jquery": "$(el).addClass(className);",
+                  "title": "Add Class",
+                  "vanilla": "if (el.classList)
+      el.classList.add(className);
+else
+  el.className += ' ' + className;",
+                }
+              }
+              index={2}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 4,
+                  "jquery": "$(el).after(htmlString);",
+                  "title": "After",
+                  "vanilla": "el.insertAdjacentHTML('afterend', htmlString);",
+                }
+              }
+              index={3}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 5,
+                  "jquery": "$(parent).append(el);",
+                  "title": "Append",
+                  "vanilla": "parent.appendChild(el);",
+                }
+              }
+              index={4}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 6,
+                  "jquery": "$(el).before(htmlString);",
+                  "title": "Before",
+                  "vanilla": "el.insertAdjacentHTML('beforebegin', htmlString);",
+                }
+              }
+              index={5}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 7,
+                  "jquery": "$(el).children();",
+                  "title": "Children",
+                  "vanilla": "el.children",
+                }
+              }
+              index={6}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 8,
+                  "jquery": "$(el).clone();",
+                  "title": "Clone",
+                  "vanilla": "el.cloneNode(true);",
+                }
+              }
+              index={7}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 9,
+                  "jquery": "$.contains(el, child);",
+                  "title": "Contains",
+                  "vanilla": "el !== child && el.contains(child);",
+                }
+              }
+              index={8}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 10,
+                  "jquery": "$(el).find(selector).length;",
+                  "title": "Contains Selector",
+                  "vanilla": "el.querySelector(selector) !== null",
+                }
+              }
+              index={9}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 11,
+                  "jquery": "$(selector).each(function(i, el){
+
+});",
+                  "title": "Each",
+                  "vanilla": "var elements = document.querySelectorAll(selector);
+Array.prototype.forEach.call(elements, function(el, i){
+
+});",
+                }
+              }
+              index={10}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 12,
+                  "jquery": "$(el).empty();
+",
+                  "title": "Empty",
+                  "vanilla": "el.innerHTML = '';",
+                }
+              }
+              index={11}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 13,
+                  "jquery": "$(selector).filter(filterFn);",
+                  "title": "Filter",
+                  "vanilla": "Array.prototype.filter.call(document.querySelectorAll(selector), filterFn);
+",
+                }
+              }
+              index={12}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 14,
+                  "jquery": "$(el).find(selector);",
+                  "title": "Find Children",
+                  "vanilla": "el.querySelectorAll(selector);",
+                }
+              }
+              index={13}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 15,
+                  "jquery": "$('.my #awesome selector');",
+                  "title": "Find Elements",
+                  "vanilla": "document.querySelectorAll('.my #awesome selector');",
+                }
+              }
+              index={14}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 16,
+                  "jquery": "$(el).attr('tabindex');",
+                  "title": "Get Attributes",
+                  "vanilla": "el.getAttribute('tabindex');",
+                }
+              }
+              index={15}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 17,
+                  "jquery": "$(el).html();",
+                  "title": "Get HTML",
+                  "vanilla": "el.innerHTML",
+                }
+              }
+              index={16}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 18,
+                  "jquery": "$(el).css(ruleName);",
+                  "title": "Get Style",
+                  "vanilla": "getComputedStyle(el)[ruleName];",
+                }
+              }
+              index={17}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 19,
+                  "jquery": "$(el).text();",
+                  "title": "Get Text",
+                  "vanilla": "el.textContent",
+                }
+              }
+              index={18}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 20,
+                  "jquery": "$(el).hasClass(className);",
+                  "title": "Has Class",
+                  "vanilla": "if (el.classList)
+  el.classList.contains(className);
+else
+  new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);",
+                }
+              }
+              index={19}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 21,
+                  "jquery": "$(el).next();",
+                  "title": "Next",
+                  "vanilla": "el.nextElementSibling",
+                }
+              }
+              index={20}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 22,
+                  "jquery": "$(el).parent();",
+                  "title": "Parent",
+                  "vanilla": "el.parentNode",
+                }
+              }
+              index={21}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 23,
+                  "jquery": "$(parent).prepend(el);",
+                  "title": "Prepend",
+                  "vanilla": "parent.insertBefore(el, parent.firstChild);",
+                }
+              }
+              index={22}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 24,
+                  "jquery": "$(el).prev();",
+                  "title": "Prev",
+                  "vanilla": "el.previousElementSibling",
+                }
+              }
+              index={23}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 25,
+                  "jquery": "$(el).remove();",
+                  "title": "Remove",
+                  "vanilla": "el.parentNode.removeChild(el);",
+                }
+              }
+              index={24}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 26,
+                  "jquery": "$(el).removeClass(className);",
+                  "title": "Remove Class",
+                  "vanilla": "if (el.classList)
+  el.classList.remove(className);
+else
+  el.className = el.className.replace(new RegExp('(^|\\\\\\\\b)' + className.split(' ').join('|') + '(\\\\\\\\b|$)', 'gi'), ' ');",
+                }
+              }
+              index={25}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 27,
+                  "jquery": "$(el).replaceWith(string);",
+                  "title": "Replace From HTML",
+                  "vanilla": "el.outerHTML = string;",
+                }
+              }
+              index={26}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 28,
+                  "jquery": "$(el).attr('tabindex', 3);",
+                  "title": "Set Attributes",
+                  "vanilla": "el.setAttribute('tabindex', 3);",
+                }
+              }
+              index={27}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 29,
+                  "jquery": "$(el).html(string);",
+                  "title": "Set HTML",
+                  "vanilla": "el.innerHTML = string;",
+                }
+              }
+              index={28}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 30,
+                  "jquery": "$(el).css('border-width', '20px');",
+                  "title": "Set Style",
+                  "vanilla": "// Use a class if possible
+el.style.borderWidth = '20px';",
+                }
+              }
+              index={29}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 31,
+                  "jquery": "$(el).text(string);
+",
+                  "title": "Set Text",
+                  "vanilla": "el.textContent = string;",
+                }
+              }
+              index={30}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 32,
+                  "jquery": "$(el).siblings();",
+                  "title": "Siblings",
+                  "vanilla": "Array.prototype.filter.call(el.parentNode.children, function(child){
+  return child !== el;
+});",
+                }
+              }
+              index={31}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 33,
+                  "jquery": "$(el).toggleClass(className);",
+                  "title": "Toggle Class",
+                  "vanilla": "if (el.classList) {
+  el.classList.toggle(className);
+} else {
+  var classes = el.className.split(' ');
+  var existingIndex = classes.indexOf(className);
+
+  if (existingIndex >= 0)
+    classes.splice(existingIndex, 1);
+  else
+    classes.push(className);
+
+  el.className = classes.join(' ');
+}",
+                }
+              }
+              index={32}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 34,
+                  "jquery": "$(el).off(eventName, eventHandler);",
+                  "title": "Off",
+                  "vanilla": "el.removeEventListener(eventName, eventHandler);",
+                }
+              }
+              index={33}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 35,
+                  "jquery": "$(el).on(eventName, eventHandler);",
+                  "title": "On",
+                  "vanilla": "el.addEventListener(eventName, eventHandler);",
+                }
+              }
+              index={34}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 36,
+                  "jquery": "$(document).ready(function(){
+
+});",
+                  "title": "Ready",
+                  "vanilla": "function ready(fn) {
+  if (document.attachEvent ? document.readyState === \\"complete\\" : document.readyState !== \\"loading\\"){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}",
+                }
+              }
+              index={35}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 37,
+                  "jquery": "$.each(array, function(i, item){
+
+});",
+                  "title": "Array Each",
+                  "vanilla": "array.forEach(function(item, i){
+
+});",
+                }
+              }
+              index={36}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 38,
+                  "jquery": "$.inArray(item, array);",
+                  "title": "Index Of",
+                  "vanilla": "array.indexOf(item);",
+                }
+              }
+              index={37}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 39,
+                  "jquery": "$.map(array, function(value, index){
+
+});",
+                  "title": "Map",
+                  "vanilla": "array.map(function(value, index){
+
+});",
+                }
+              }
+              index={38}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 40,
+                  "jquery": "$.parseJSON(string);
+",
+                  "title": "Parse JSON",
+                  "vanilla": "JSON.parse(string);",
+                }
+              }
+              index={39}
+              scoreUp={[Function]}
+            />,
+            <Question
+              data={
+                Object {
+                  "id": 41,
+                  "jquery": "$.trim(string);",
+                  "title": "Trim",
+                  "vanilla": "string.trim();",
+                }
+              }
+              index={40}
+              scoreUp={[Function]}
+            />,
+          ],
+        ],
+        "className": "main-page",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "highScore": 0,
+            "resetGame": [Function],
+            "score": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "stickey-header",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 1,
+              "jquery": "$(el).hide();",
+              "title": "Hide",
+              "vanilla": "el.style.display = 'none';
+",
+            },
+            "index": 0,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 2,
+              "jquery": "$(el).show();
+",
+              "title": "Show",
+              "vanilla": "el.style.display = 'block';",
+            },
+            "index": 1,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 3,
+              "jquery": "$(el).addClass(className);",
+              "title": "Add Class",
+              "vanilla": "if (el.classList)
+      el.classList.add(className);
+else
+  el.className += ' ' + className;",
+            },
+            "index": 2,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 4,
+              "jquery": "$(el).after(htmlString);",
+              "title": "After",
+              "vanilla": "el.insertAdjacentHTML('afterend', htmlString);",
+            },
+            "index": 3,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 5,
+              "jquery": "$(parent).append(el);",
+              "title": "Append",
+              "vanilla": "parent.appendChild(el);",
+            },
+            "index": 4,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 6,
+              "jquery": "$(el).before(htmlString);",
+              "title": "Before",
+              "vanilla": "el.insertAdjacentHTML('beforebegin', htmlString);",
+            },
+            "index": 5,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 7,
+              "jquery": "$(el).children();",
+              "title": "Children",
+              "vanilla": "el.children",
+            },
+            "index": 6,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 8,
+              "jquery": "$(el).clone();",
+              "title": "Clone",
+              "vanilla": "el.cloneNode(true);",
+            },
+            "index": 7,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 9,
+              "jquery": "$.contains(el, child);",
+              "title": "Contains",
+              "vanilla": "el !== child && el.contains(child);",
+            },
+            "index": 8,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 10,
+              "jquery": "$(el).find(selector).length;",
+              "title": "Contains Selector",
+              "vanilla": "el.querySelector(selector) !== null",
+            },
+            "index": 9,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 11,
+              "jquery": "$(selector).each(function(i, el){
+
+});",
+              "title": "Each",
+              "vanilla": "var elements = document.querySelectorAll(selector);
+Array.prototype.forEach.call(elements, function(el, i){
+
+});",
+            },
+            "index": 10,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 12,
+              "jquery": "$(el).empty();
+",
+              "title": "Empty",
+              "vanilla": "el.innerHTML = '';",
+            },
+            "index": 11,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 13,
+              "jquery": "$(selector).filter(filterFn);",
+              "title": "Filter",
+              "vanilla": "Array.prototype.filter.call(document.querySelectorAll(selector), filterFn);
+",
+            },
+            "index": 12,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 14,
+              "jquery": "$(el).find(selector);",
+              "title": "Find Children",
+              "vanilla": "el.querySelectorAll(selector);",
+            },
+            "index": 13,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 15,
+              "jquery": "$('.my #awesome selector');",
+              "title": "Find Elements",
+              "vanilla": "document.querySelectorAll('.my #awesome selector');",
+            },
+            "index": 14,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 16,
+              "jquery": "$(el).attr('tabindex');",
+              "title": "Get Attributes",
+              "vanilla": "el.getAttribute('tabindex');",
+            },
+            "index": 15,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 17,
+              "jquery": "$(el).html();",
+              "title": "Get HTML",
+              "vanilla": "el.innerHTML",
+            },
+            "index": 16,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 18,
+              "jquery": "$(el).css(ruleName);",
+              "title": "Get Style",
+              "vanilla": "getComputedStyle(el)[ruleName];",
+            },
+            "index": 17,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 19,
+              "jquery": "$(el).text();",
+              "title": "Get Text",
+              "vanilla": "el.textContent",
+            },
+            "index": 18,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 20,
+              "jquery": "$(el).hasClass(className);",
+              "title": "Has Class",
+              "vanilla": "if (el.classList)
+  el.classList.contains(className);
+else
+  new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);",
+            },
+            "index": 19,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 21,
+              "jquery": "$(el).next();",
+              "title": "Next",
+              "vanilla": "el.nextElementSibling",
+            },
+            "index": 20,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 22,
+              "jquery": "$(el).parent();",
+              "title": "Parent",
+              "vanilla": "el.parentNode",
+            },
+            "index": 21,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 23,
+              "jquery": "$(parent).prepend(el);",
+              "title": "Prepend",
+              "vanilla": "parent.insertBefore(el, parent.firstChild);",
+            },
+            "index": 22,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 24,
+              "jquery": "$(el).prev();",
+              "title": "Prev",
+              "vanilla": "el.previousElementSibling",
+            },
+            "index": 23,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 25,
+              "jquery": "$(el).remove();",
+              "title": "Remove",
+              "vanilla": "el.parentNode.removeChild(el);",
+            },
+            "index": 24,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 26,
+              "jquery": "$(el).removeClass(className);",
+              "title": "Remove Class",
+              "vanilla": "if (el.classList)
+  el.classList.remove(className);
+else
+  el.className = el.className.replace(new RegExp('(^|\\\\\\\\b)' + className.split(' ').join('|') + '(\\\\\\\\b|$)', 'gi'), ' ');",
+            },
+            "index": 25,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 27,
+              "jquery": "$(el).replaceWith(string);",
+              "title": "Replace From HTML",
+              "vanilla": "el.outerHTML = string;",
+            },
+            "index": 26,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 28,
+              "jquery": "$(el).attr('tabindex', 3);",
+              "title": "Set Attributes",
+              "vanilla": "el.setAttribute('tabindex', 3);",
+            },
+            "index": 27,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 29,
+              "jquery": "$(el).html(string);",
+              "title": "Set HTML",
+              "vanilla": "el.innerHTML = string;",
+            },
+            "index": 28,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 30,
+              "jquery": "$(el).css('border-width', '20px');",
+              "title": "Set Style",
+              "vanilla": "// Use a class if possible
+el.style.borderWidth = '20px';",
+            },
+            "index": 29,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 31,
+              "jquery": "$(el).text(string);
+",
+              "title": "Set Text",
+              "vanilla": "el.textContent = string;",
+            },
+            "index": 30,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 32,
+              "jquery": "$(el).siblings();",
+              "title": "Siblings",
+              "vanilla": "Array.prototype.filter.call(el.parentNode.children, function(child){
+  return child !== el;
+});",
+            },
+            "index": 31,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 33,
+              "jquery": "$(el).toggleClass(className);",
+              "title": "Toggle Class",
+              "vanilla": "if (el.classList) {
+  el.classList.toggle(className);
+} else {
+  var classes = el.className.split(' ');
+  var existingIndex = classes.indexOf(className);
+
+  if (existingIndex >= 0)
+    classes.splice(existingIndex, 1);
+  else
+    classes.push(className);
+
+  el.className = classes.join(' ');
+}",
+            },
+            "index": 32,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 34,
+              "jquery": "$(el).off(eventName, eventHandler);",
+              "title": "Off",
+              "vanilla": "el.removeEventListener(eventName, eventHandler);",
+            },
+            "index": 33,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 35,
+              "jquery": "$(el).on(eventName, eventHandler);",
+              "title": "On",
+              "vanilla": "el.addEventListener(eventName, eventHandler);",
+            },
+            "index": 34,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 36,
+              "jquery": "$(document).ready(function(){
+
+});",
+              "title": "Ready",
+              "vanilla": "function ready(fn) {
+  if (document.attachEvent ? document.readyState === \\"complete\\" : document.readyState !== \\"loading\\"){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}",
+            },
+            "index": 35,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 37,
+              "jquery": "$.each(array, function(i, item){
+
+});",
+              "title": "Array Each",
+              "vanilla": "array.forEach(function(item, i){
+
+});",
+            },
+            "index": 36,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 38,
+              "jquery": "$.inArray(item, array);",
+              "title": "Index Of",
+              "vanilla": "array.indexOf(item);",
+            },
+            "index": 37,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 39,
+              "jquery": "$.map(array, function(value, index){
+
+});",
+              "title": "Map",
+              "vanilla": "array.map(function(value, index){
+
+});",
+            },
+            "index": 38,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 40,
+              "jquery": "$.parseJSON(string);
+",
+              "title": "Parse JSON",
+              "vanilla": "JSON.parse(string);",
+            },
+            "index": 39,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "data": Object {
+              "id": 41,
+              "jquery": "$.trim(string);",
+              "title": "Trim",
+              "vanilla": "string.trim();",
+            },
+            "index": 40,
+            "scoreUp": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
