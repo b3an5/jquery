@@ -29,13 +29,12 @@
 
 .splash-button {
   padding: 5px;
-  color: yellow;
-  background-color: green;
-  margin-top: 5px;
+  background-color: #3dcfcf;
+  margin-top: 15px;
   &:hover {
     cursor: pointer;
-    color: green;
-    background-color: yellow;
+    color: #fff;
+    background-color: darkblue;
   }
 }
 
@@ -45,9 +44,10 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  margin: 10px;
+  margin: 20px;
   border: 1px solid grey;
-  background-color: bisque;
+  border-radius: 40px;
+  background-color: #fff;
 }
 
 .radios {
@@ -58,16 +58,24 @@
   justify-content: center;
   text-align: center;
   appearance: none;
-  background-color: cyan;
+  background-color: #3dcfcf;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 30px;
 
   &:checked {
-    background-color: purple;
+    background-color: darkblue;
     transition: 1s;
+    color: #fff;
   }
 
   &::after {
     content: attr(id);
   }
+}
+
+.libbys-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -150px;
 }

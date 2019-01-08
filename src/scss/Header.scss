@@ -3,7 +3,7 @@
   padding-bottom: 5px;
   z-index: 2;
   width: 100vw;
-  background-color: aqua 
+  background-color: #4157b2;
 }
 
 .main-title {
@@ -14,18 +14,19 @@
 .score {
   position: absolute;
   top: 27px;
-  right: 5px;
+  right: 10px;
 }
 
 .reset-button {
   margin: 0;
   position: absolute;
   top: 25px;
+  left: 10px;
 }
 
 .high-score {
   position: absolute;
   top: 60px;
-  right: 0;
+  right: 10px;
   font-size: 1em;
 }

@@ -63,7 +63,7 @@ describe('App', () => {
       })
     })
     
-    it.skip('shouldrun set difficulty when passDifficulty is run', () => {
+    it('shouldrun set difficulty when passDifficulty is run', () => {
       let difficultyButtons = [{checked: true}];
       wrapper.instance().passDifficulty();
       expect(setDifficulty).toBeCalled()
