@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Question
+    data={
+      Object {
+        "id": 3,
+        "jquery": "$(el).addClass(className);",
+        "title": "Add Class",
+        "vanilla": "if (el.classList)
+      el.classList.add(className);
+else
+  el.className += ' ' + className;",
+      }
+    }
+    scoreUp={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="question-title"
+        >
+          Add Class
+        </h1>,
+        Array [
+          <h2
+            className="vanilla-js"
+          >
+            if (el.classList)
+          </h2>,
+          <h2
+            className="vanilla-js"
+          >
+                  el.classList.add(className);
+          </h2>,
+          <h2
+            className="vanilla-js"
+          >
+            else
+          </h2>,
+          <h2
+            className="vanilla-js"
+          >
+              el.className += ' ' + className;
+          </h2>,
+        ],
+        <input
+          className="answer-input"
+          onChange={[Function]}
+          typeof={[Function]}
+        />,
+        <button
+          className="question-button"
+          onClick={[Function]}
+        >
+          enter
+        </button>,
+      ],
+      "className": "question-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Class",
+          "className": "question-title",
+        },
+        "ref": null,
+        "rendered": "Add Class",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "if (el.classList)",
+          "className": "vanilla-js",
+        },
+        "ref": null,
+        "rendered": "if (el.classList)",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "      el.classList.add(className);",
+          "className": "vanilla-js",
+        },
+        "ref": null,
+        "rendered": "      el.classList.add(className);",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "else",
+          "className": "vanilla-js",
+        },
+        "ref": null,
+        "rendered": "else",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "  el.className += ' ' + className;",
+          "className": "vanilla-js",
+        },
+        "ref": null,
+        "rendered": "  el.className += ' ' + className;",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "answer-input",
+          "onChange": [Function],
+          "typeof": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "enter",
+          "className": "question-button",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "enter",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="question-title"
+          >
+            Add Class
+          </h1>,
+          Array [
+            <h2
+              className="vanilla-js"
+            >
+              if (el.classList)
+            </h2>,
+            <h2
+              className="vanilla-js"
+            >
+                    el.classList.add(className);
+            </h2>,
+            <h2
+              className="vanilla-js"
+            >
+              else
+            </h2>,
+            <h2
+              className="vanilla-js"
+            >
+                el.className += ' ' + className;
+            </h2>,
+          ],
+          <input
+            className="answer-input"
+            onChange={[Function]}
+            typeof={[Function]}
+          />,
+          <button
+            className="question-button"
+            onClick={[Function]}
+          >
+            enter
+          </button>,
+        ],
+        "className": "question-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Class",
+            "className": "question-title",
+          },
+          "ref": null,
+          "rendered": "Add Class",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "if (el.classList)",
+            "className": "vanilla-js",
+          },
+          "ref": null,
+          "rendered": "if (el.classList)",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "      el.classList.add(className);",
+            "className": "vanilla-js",
+          },
+          "ref": null,
+          "rendered": "      el.classList.add(className);",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "else",
+            "className": "vanilla-js",
+          },
+          "ref": null,
+          "rendered": "else",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "  el.className += ' ' + className;",
+            "className": "vanilla-js",
+          },
+          "ref": null,
+          "rendered": "  el.className += ' ' + className;",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "answer-input",
+            "onChange": [Function],
+            "typeof": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "enter",
+            "className": "question-button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "enter",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

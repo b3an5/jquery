@@ -3,7 +3,7 @@ import Main from './Main.js';
 import { shallow } from 'enzyme';
 import jQueryData from './data.js';
 
-describe('Container', () => {
+describe('Main', () => {
 
   let wrapper 
 

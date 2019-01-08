@@ -2,7 +2,7 @@ import React from 'react';
 import Splash from './Splash.js';
 import { shallow } from 'enzyme';
 
-describe('Container', () => {
+describe('Splash', () => {
 
   let wrapper;
   const mockShowMainPage = jest.fn()
