@@ -50,7 +50,6 @@ class App extends Component {
     if (this.state.splash === true) {
       return (
           <Splash 
-          setDifficulty={this.setDifficulty}
           showMainPage={this.toggleMainPage} />
       );
     } else {
