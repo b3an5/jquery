@@ -8,9 +8,10 @@ export default function Splash(props) {
       <div className='libbys-div'>
         <h1 className='splash-title'>Jquery knowlege Tester</h1>
         <div className='app-description'>
-        <p>Welcome to my app, this is used to test your jQuery skills.</p>
+        <p>This App is used to test your jQuery skills.</p>
         <p>you will be presented with vanilla javascript</p>
         <p>you must write the equivilent JQuery code in the input box</p>
+          <p>All questions pulled from <a href='http://youmightnotneedjquery.com/'>You Might Not Need Jquery</a></p>
         </div>
         <button className='splash-button' onClick={props.showMainPage}>Click here to get started</button>
         <form className='difficulty-buttons'>
